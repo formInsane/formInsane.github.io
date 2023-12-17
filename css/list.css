@@ -1,0 +1,79 @@
+#aaron { 
+    padding: 0 20px;
+    border: 1px solid #ececec; 
+}
+
+.content-header { 
+    display: flex; 
+    justify-content: space-between; 
+}
+.content-header .list-date { 
+    font-size: 40px; 
+    line-height: 1; 
+    vertical-align: middle; 
+}
+.content-header .list-date span { 
+    font-size: 14px; 
+}
+
+
+/* 메인 */
+.content-main { 
+    padding-top: 60px; 
+}
+.content-main .grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    float: left; 
+    position: relative;
+    width: 100%;
+}
+.content-main .grid .grid_item { 
+    width: calc(100% / 3 - 2vw); 
+    height: 29vw; 
+    margin-bottom: 3vw; 
+    margin-right: 3vw; 
+    position: relative; 
+}
+.content-main .grid .grid_item:nth-child(3n) { 
+    margin-right: 0; 
+}
+.content-main .grid .grid_item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, .4); 
+    z-index: 1;
+    pointer-events: none;
+}
+
+.content-main .grid .grid_item .grid_link { 
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content-main .grid .grid_item .grid_link .grid_title { 
+    position: absolute; 
+    bottom: 0;
+    font-size: 3vw; 
+    color: #ffffff; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+    line-height: 1em; 
+    height: 2em;
+    margin: 2vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+}
+.content-main .grid .grid_item .grid_link .grid_img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}

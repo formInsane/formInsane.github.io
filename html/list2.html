@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기짱 - 리스트</title>
+
+    <!-- style -->
+    <link href="../css/common.css" rel="stylesheet" />    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  header -->
+    <header class="header">
+        <ul class="header_inner">
+            <li class="header_item">
+                <a href="" class="btn_prev" title="이전 페이지로 이동"><i class="fa-solid fa-chevron-left"></i></a>
+                <h1>현재 페이지명</h1>
+            </li>
+        </ul>
+    </header>
+
+    <main id="aaron">
+        <!-- header -->
+        <div class="content-header">
+            <a href="../index.html" title="뒤로가기" class="back">
+                <i class="fa-solid fa-angle-left fa-2xl"></i>
+            </a>
+            <p class="list-date">
+                20
+                <span>금요일</span>
+            </p>
+        </div>
+
+        <div class="content-main">
+            <ul class="grid"></ul>
+        </div>
+
+        <button id="btnAjax" style="border: 1px solid red; font-size: 40px; display: block; margin: 100px auto;">클릭</button>
+        <!-- footer -->
+    </main>
+
+    <!--  floating btns -->
+    <!-- <footer class="footer">
+        <a href="./write.html" class="img_box" title="일기 작성하기 페이지로 이동"><img src="../images/btn_floating_write.png" alt=""></a>
+        <a href="" class="img_box" title="맨 위로 화면 이동"><img src="../images/btn_floating_top.png" alt=""></a>
+    </footer> -->
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/d4b8652b4c.js" crossorigin="anonymous"></script>
+    <script type="module" src="../js/list2.js"></script>
+</body>
+</html>

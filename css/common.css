@@ -1,0 +1,79 @@
+@import './reset.css';
+@import './main.css';
+@import './list.css';
+@import './write.css';
+@import './write2.css';
+@import './detail.css';
+
+/* header */
+.header {z-index: 9; position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 72rem; height: 8rem; padding: 0 3rem; background-color: #fff;}
+.header_inner {position: relative; display: flex; align-items: center; width: 100%; height: 100%;}
+.header_item {display: flex; align-items: center; font-size: 3rem;}
+.header .logo {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.header .logo img {width: 15rem;}
+.header .btn_prev {display: flex;}
+.header .btn_prev .arrow_size {display: block; padding-right: 1.6rem; font-size: 4rem;}
+
+/* main */
+main {position: relative; width: 100%; max-width: 72rem; padding: 4rem 3rem; margin: 8rem auto 0;}
+section {width: 66rem; margin-bottom: 12rem;}
+
+/* text */
+.main {margin-bottom: .6rem; font-size: 5.4rem;}
+.main.margin0 {margin-bottom: 0;}
+.sub {margin-bottom: 3.6rem; font-size: 2.5rem; color: #666;}
+.desc {font-size: 2.5rem; color: #ccc;}
+.title_box {display: flex; align-items: center; justify-content: space-between; margin-bottom: 3.6rem;}
+.title_box.margin0 {margin-bottom: 0;}
+.title_box .main {font-size: 4.8rem;}
+.title_box .main .count {padding-left: 1.6rem; font-size: 3.6rem; font-weight: 700; color: #ff6767;}
+.title_box .link_button {font-size: 3.6rem;}
+.txt_title {width: 28rem; font-size: 3rem; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+
+/* icon */
+.fa-solid, .fas {font-size: 3rem;}
+
+/* diary_list */
+.diary_list {margin-bottom: 12rem;}
+.diary_list .diary_item {height: 18.7rem; margin-bottom: 3.2rem;}
+.diary_list .link {display: flex; justify-content: space-between;}
+.diary_list .link .num {width: 5rem; font-size: 3.6rem;}
+.diary_list .link .txt_box {width: 28rem; margin-right: 3rem;}
+.diary_list .link .weather {margin-bottom: 1.6rem;}
+.diary_list .diary_img {width: 28rem; height: 18.7rem; border-radius: 10px; background: #f4f4f4; overflow: hidden;}
+
+/* slide_list */
+.slide_list {display: flex; padding: 0 0 2rem;}
+.slide_item {width: 40rem; height: 34.1rem; margin-right: 3.6rem; border-radius: 10px; box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.2); overflow: hidden;}
+.slide_link {width: 100%;}
+.slide_link .slide_img {height: 20rem;}
+.slide_link .txt_box {padding: 2rem;}
+.slide_link .txt_date {margin-bottom: 1rem;}
+.slide_link .txt_title {font-size: 3rem;}
+.swiper-pagination-progressbar {background: #f4f4f4;}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: #ccc;}
+
+/* comment */
+.comment_item {position: relative; display: flex; align-items: center; justify-content: space-between; padding: 3.6rem 0; border-bottom: 1px solid #ccc; font-size: 2rem;}
+.comment_item:first-child {padding-top: 0;}
+.comment_detail {padding-right: 12rem; font-size: 2rem;}
+.comment_time {margin-bottom: 1.6rem; font-size: 2.4rem; color: #ccc;}
+.comment_txt {font-size: 3rem; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.comment_btn {position: absolute; bottom: 3.6rem; right: 0; padding: .6rem 1rem; border-radius: 1rem; border: 1px solid #ccc; font-size: 2.4rem; color: #ccc; transition: .3s;}
+.comment_btn:hover {background-color: #000; color: #fff;}
+
+/* nav button */
+.nav {position: fixed; bottom: 3rem; right: 3rem; z-index: 9;}
+.nav a {display: flex; align-items: center; justify-content: center; width: 10rem; height: 10rem; border-radius: 10rem; font-size: 3rem;}
+.nav .btn_top {margin-bottom: 1.6rem; backdrop-filter: blur(15px); color: #000;}
+.nav .btn_write {background-color: #000; color: #fff;}
+
+/* banner */
+.banner {position: relative; margin-bottom: 6rem;}
+.banner_img {width: 100%;}
+.banner_title {position: absolute; top: 0; right: -1rem; padding: 1rem 2.3rem; border-radius: 100px; background: #0000005b;; font-size: 2.4rem; color: #fff;}
+
+/* swiper */
+.swiper {width: 100%; height: 100%;}
+.swiper-slide {display: flex; justify-content: center; font-size: 18px; background: #fff;}
+.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}

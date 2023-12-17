@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기짱</title>
+    <!-- style -->
+    <link href="../css/common.css" rel="stylesheet" > 
+</head>
+
+<body class="sub_page">
+    <main class="morgan">
+        <form id="form" class="write_form">
+            <div class="write_header">
+                <div class="todaydate">
+                    <label for="date" class="date_txt">날짜 :</label>
+                    <input type="date" class="input_date" name="date" id="date">
+                </div>
+                <div class="weather_selector">
+                    <p class="weather_txt">날씨 :</p>
+                    <div class="weather_icon">
+                        <input type="radio" id="weatherSun" class="img_input sun" name="weather" value="sun" >
+                        <input type="radio" id="weatherCloud" class="img_input cloud" name="weather" value="cloud">
+                        <input type="radio" id="weatherRain" class="img_input rain" name="weather" value="rain">
+                        <input type="radio" id="weatherSnow" class="img_input snow" name="weather" value="snow">
+                        <input type="radio" id="weatherHalfCloud" class="img_input halfcloud" name="weather" value="halfcloud">
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <label for="title" class="title_txt">제목:</label>
+                <input name="title" id="title" type="text" placeholder="제목을 입력하세요." class="tit_txt">
+            </div>
+
+            <div class="btn-upload">
+                <p class="upload_txt">이미지 올리기</p>
+                <input type="file" name="file" id="file" class="input_image" accept="image/*" onchange="PreviewImage();" id="file"  >
+                <img id="user_image" src="" alt="" class="show_image" >
+            </div>
+            
+            <textarea name="form_write" class="detail_text" id="autoSaved" style="resize: none;" rows="10" maxlength = "300"></textarea>
+            <div class="button">
+                <input type="button" name="cancel" value="취소" class="foot_button cancel_button">
+                <input type="submit" name="save" value="저장" class="foot_button submit_button">
+            </div>
+        </form>  
+        
+    </main>
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/d4b8652b4c.js" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="../js/common.js"></script> -->
+    <script src="../js/write.js"></script>
+</body>
+
+</html>

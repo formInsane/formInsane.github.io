@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- jquery CDN -->  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- fullcalendar CDN -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <!-- fullcalendar 언어 CDN --> 
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="main_page">
+    <header class="header">
+      <h1 class="logo"><a href="/"><img src="images/logo2.png" alt=""></a></h1>
+    </header>
+    <main class="yumi">
+      <section class="month">
+        <div id='calendar'></div>
+        <p class="desc">날짜 클릭시 작성한 일기 목록을 볼 수 있어요.</p>
+      </section>
+      <section class="today">
+        <div class="title_box margin0">
+          <h2 class="main">오늘의 인기 일기</h2>
+          <a href="" class="link_button"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <p class="sub">오늘 하루 중 가장 인기있는 일기를 만나보세요.</p>
+        <ul class="diary_list">
+          <li class="diary_item">
+            <a href="" class="link">
+              <span class="num">1</span>
+              <div class="txt_box">
+                <img src="images/icon/acsun.png" alt="해" class="weather">
+                <h3 class="txt_title">해가 반짝반짝 빛이납니다.</h3>
+              </div>
+              <img src="images/main01.jpg" alt="" class="diary_img">
+            </a>
+          </li>
+          <li class="diary_item">
+            <a href="" class="link">
+              <span class="num">2</span>
+              <div class="txt_box">
+                <img src="images/icon/achalfcloud.png" alt="흐림" class="weather">
+                <h3 class="txt_title">오늘은 흐려요 해랑 구름</h3>
+              </div>
+              <img src="images/main02.jpg" alt="" class="diary_img">
+            </a>
+          </li>
+          <li class="diary_item">
+            <a href="" class="link">
+              <span class="num">3</span>
+              <div class="txt_box">
+                <img src="images/icon/accloud.png" alt="구름" class="weather">
+                <h3 class="txt_title">2024년 우리 모두 그냥 다 잘 된다.</h3>
+              </div>
+              <img src="images/main03.jpg" alt="" class="diary_img">
+            </a>
+          </li>
+          <li class="diary_item">
+            <a href="" class="link">
+              <span class="num">4</span>
+              <div class="txt_box">
+                <img src="images/icon/acrain.png" alt="비" class="weather">
+                <h3 class="txt_title">우산 챙겨요 :D</h3>
+              </div>
+              <img src="images/main04.jpg" alt="" class="diary_img">
+            </a>
+          </li>
+          <li class="diary_item">
+            <a href="" class="link">
+              <span class="num">5</span>
+              <div class="txt_box">
+                <img src="images/icon/acsnow.png" alt="눈" class="weather">
+                <h3 class="txt_title">행복 그 잡채...</h3>
+              </div>
+              <img src="images/main05.jpg" alt="" class="diary_img">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="best">
+        <div class="title_box">
+          <h2 class="main">일기짱이 뽑은 BEST5</h2>
+          <a href="" class="link_button"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <p class="sub" id="best_period"></p>
+        <div class="swiper bestSwiper">
+          <ul class="slide_list swiper-wrapper">
+            <li class="slide_item swiper-slide">
+              <a href="" class="slide_link">
+                <img src="images/angry_puppy.PNG" alt="" class="slide_img">
+                <div class="txt_box">
+                  <p class="txt_date">2023.12.08</p>
+                  <p class="txt_title">어이 주인 산책 가랏!!!</p>
+                </div>
+              </a>
+            </li>
+            <li class="slide_item swiper-slide">
+              <a href="" class="slide_link">
+                <img src="images/choonsic.jpg" alt="" class="slide_img">
+                <div class="txt_box">
+                  <p class="txt_date">2023.12.08</p>
+                  <p class="txt_title">나 춘식 오늘 하루도 하체 뿌셨다...</p>
+                </div>
+              </a>
+            </li>
+            <li class="slide_item swiper-slide">
+              <a href="" class="slide_link">
+                <img src="images/good.jpg" alt="" class="slide_img">
+                <div class="txt_box">
+                  <p class="txt_date">2023.12.08</p>
+                  <p class="txt_title">오늘 하루도 고생한 나 참 잘했어요 :D</p>
+                </div>
+              </a>
+            </li>
+            <li class="slide_item swiper-slide">
+              <a href="" class="slide_link">
+                <img src="images/puppy.jpg" alt="" class="slide_img">
+                <div class="txt_box">
+                  <p class="txt_date">2023.12.08</p>
+                  <p class="txt_title">안녕하세요 저는 제목 입니다. :D</p>
+                </div>
+              </a>
+            </li>
+            <li class="slide_item swiper-slide">
+              <a href="" class="slide_link">
+                <img src="images/angry_puppy.PNG" alt="" class="slide_img">
+                <div class="txt_box">
+                  <p class="txt_date">2023.12.08</p>
+                  <p class="txt_title">어이 주인 산책가랏가랏</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="best_pagination swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <!-- nav button -->
+    <nav class="nav">
+      <a href="javascript:;" class="btn_top" title="맨 위로 화면 이동"><i class="fa-solid fa-chevron-up"></i></a>
+      <a href="html/write2.html" class="btn_write" title="일기 작성하기 페이지로 이동"><i class="fa-solid fa-pen"></i></a>
+    </nav>
+    <!-- popup -->
+    <!-- <div class="popup">
+      <div class="popup_cont">
+        <div class="swiper popupSwiper">
+          <ul class="popup_wrapper swiper-wrapper">
+            <li class="popup_slide swiper-slide">
+              <a href="javascript:void(0);" title="" class="popup_link">
+                <img src="images/choonsic.jpg" alt="" class="popup_img"/>
+              </a>
+            </li>
+            <li class="popup_slide swiper-slide">
+              <a href="javascript:void(0);" title="" class="popup_link">
+                <img src="./img/main/popup02.png" alt="" class="popup_img"/>
+              </a>
+            </li>
+            <li class="popup_slide swiper-slide">
+              <a href="javascript:void(0);" title="" class="popup_link">
+                <img src="./img/main/popup03.png" alt="" class="popup_img"/>
+              </a>
+            </li>
+          </ul>
+          <div class="popup_pagination swiper-pagination"></div>
+        </div>
+        <div class="btn_wrap">
+          <button class="today_closebtn">오늘 하루 보지않기</button>
+          <button class="closebtn">닫기</button>
+        </div>
+      </div>
+    </div> -->
+    <!-- script file -->
+    <script src="https://kit.fontawesome.com/d4b8652b4c.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/list.js"></script> -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/common.js"></script> -->
+  </body>
+</html>

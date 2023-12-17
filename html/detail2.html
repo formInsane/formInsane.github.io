@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기 상세</title>
+    <!-- style -->
+    <link href="../css/common.css" rel="stylesheet" />    
+</head>
+
+<body class="sub_page sub_write">
+    <main class="ivy">
+        <div class="con_inner">
+            <div class="detail_header">
+                <div class="detail_todaydate">
+                    <p class="detail_date_txt"><span>날짜 :</span> </p>
+                    <p class="detail_input_date"></p>
+                </div>
+                <div class="detail_weather_selector">
+                    <p class="detail_weather_txt"><span>날씨 :</span> </p>
+                    <div class="detail_weather_icon">
+                        <input type="radio" id="" class="img_input sun" name="weather" value="sun">
+                        <input type="radio" id="" class="img_input cloud" name="weather" value="cloud">
+                        <input type="radio" id="" class="img_input rain" name="weather" value="rain">
+                        <input type="radio" id="" class="img_input snow" name="weather" value="snow">
+                        <input type="radio" id="" class="img_input halfcloud" name="weather" value="halfcloud">
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail_title">
+                <p class="detail_title_txt"><span>제목:</span> </p>
+                <p class="detail_tit_txt"></p>
+            </div>
+
+            <div class="detail_upload_img"></div>
+
+            <p class="detail_text">
+                왈왈 와르르르를 왈!<br>
+                (오늘 해가 반짝반짝 햇지만 산책을 못 갔다!)<br>
+                왈왈 와르르르를 왈!<br>
+                (오늘 해가 반짝반짝 햇지만 산책을 못 갔다!)<br>
+                왈왈 와르르르를 왈!<br>
+                (오늘 해가 반짝반짝 햇지만 산책을 못 갔다!)<br>
+                왈왈 와르르르를 왈!<br>
+                (오늘 해가 반짝반짝 햇지만 산책을 못 갔다!)
+            </p>
+
+            <div class="button_box">
+                <button type="button" name="cancel" value="수정" class="foot_button button_edit">
+                <button type="button" name="save" value="삭제" class="foot_button button_del">
+            </div>
+        </div>
+        <section class="comment con_inner">
+            <div class="title_box">
+                <h2 class="main">댓글<span class="count">(06)</span></h2>
+                <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <ul class="comment_list">
+                <li class="comment_item">
+                    <div class="comment_detail">
+                      <p class="comment_time">1분 전</p>
+                      <p class="comment_txt">헐... 야 나도!! 8ㅅ8</p>
+                    </div>
+                    <a href="" class="comment_btn">답글 쓰기</a>
+                </li>
+                <li class="comment_item">
+                  <div class="comment_detail">
+                    <p class="comment_time">2분 전</p>
+                    <sp class="comment_txt">난 오늘 연남동으로 산책가고 간식도 많이 먹음 :D 난 오늘 연남동으로 산책가고 간식도 많이 먹음 :D</sp>
+                  </div>
+                  <a href="" class="comment_btn">답글 쓰기</a>
+                </li>
+                <li class="comment_item">
+                  <div class="comment_detail">
+                    <p class="comment_time">5분 전</p>
+                    <p class="comment_txt">ㅠㅠㅠ</p>
+                  </div>
+                  <a href="" class="comment_btn">답글 쓰기</a>
+                </li>
+                <li class="comment_item">
+                  <div class="comment_detail">
+                    <p class="comment_time">8분 전</p>
+                    <p class="comment_txt">내일도 해가 반짝반짝하면 좋겠당!</p>
+                  </div>
+                  <button class="comment_btn">답글 쓰기</button>
+                </li>
+                <li class="comment_item">
+                  <div class="comment_detail">
+                    <p class="comment_time">8분 전</p>
+                    <p class="comment_txt">ㅠㅠㅠ</p>
+                  </div>
+                  <a href="" class="comment_btn">답글 쓰기</a>
+                </li>
+            </ul>
+        </section>
+        <section class="banner">
+            <img src="../images/banner.png" alt="망그러진 곰 감자닮은 뽀시래기 등장 보러가기" class="banner_img">
+            <p class="banner_title">AD</p>
+        </section>
+        <section class="con_inner">
+            <div class="title_box">
+                <h2 class="main">다른 일기 보러가기</h2>
+                <a href=""><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <ul class="diary_list">
+                <li class="diary_item">
+                  <a href="" class="link">
+                    <div class="txt_box">
+                      <img src="../images/icon/acsun.png" alt="해" class="weather">
+                      <h3 class="txt_title">해가 반짝반짝 빛이납니다.</h3>
+                    </div>
+                    <img src="../images/main01.jpg" alt="" class="diary_img">
+                  </a>
+                </li>
+                <li class="diary_item">
+                  <a href="" class="link">
+                    <div class="txt_box">
+                      <img src="../images/icon/achalfcloud.png" alt="흐림" class="weather">
+                      <h3 class="txt_title">오늘은 흐려요 해랑 구름</h3>
+                    </div>
+                    <img src="../images/main02.jpg" alt="" class="diary_img">
+                  </a>
+                </li>
+                <li class="diary_item">
+                  <a href="" class="link">
+                    <div class="txt_box">
+                      <img src="../images/icon/accloud.png" alt="구름" class="weather">
+                      <h3 class="txt_title">2024년 우리 모두 그냥 다 잘 된다.</h3>
+                    </div>
+                    <img src="../images/main03.jpg" alt="" class="diary_img">
+                  </a>
+                </li>
+                <li class="diary_item">
+                  <a href="" class="link">
+                    <div class="txt_box">
+                      <img src="../images/icon/acrain.png" alt="비" class="weather">
+                      <h3 class="txt_title">우산 챙겨요 :D</h3>
+                    </div>
+                    <img src="../images/main04.jpg" alt="" class="diary_img">
+                  </a>
+                </li>
+                <li class="diary_item">
+                  <a href="" class="link">
+                    <div class="txt_box">
+                      <img src="../images/icon/acsnow.png" alt="눈" class="weather">
+                      <h3 class="txt_title">행복 그 잡채...</h3>
+                    </div>
+                    <img src="../images/main05.jpg" alt="" class="diary_img">
+                  </a>
+                </li>
+            </ul>
+        </section>
+    </main>    
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/d4b8652b4c.js" crossorigin="anonymous"></script>
+    <script type="module" src="../js/common.js"></script>
+</body>
+</html>

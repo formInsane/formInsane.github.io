@@ -1,0 +1,39 @@
+.write_header{display: flex; margin-bottom: 1.6rem;}
+.todaydate{display: flex; align-items: center; width: 24.6rem; gap: 1rem; padding: 3rem 0 2.4rem 1.6rem; border-radius: 1rem 0 0 1rem; border: 1px solid #CCCCCC;}
+.date_txt{font-size: 2.2rem; line-height: 2.6rem; font-weight: 700;}
+.input_date{border: none; font-size: 1.9rem; font-weight: 700;}
+.weather_selector{display: flex; width: 42.3rem; gap: 3.1rem; align-items: center; padding: 3rem 2.7rem 2.4rem 1.6rem; border-radius: 0 1rem 1rem 0; border: 1px solid #CCCCCC;}
+.weather_txt{font-size: 2.2rem; font-weight: 700;}
+.weather{font-size: 4rem;}
+.weather_icon{display: flex; gap: 3.1rem;}
+.img_input{text-align: center; border: none; width: 3rem; height: 3.1rem;}
+.sun{background: url('../images/icon/sun.png')center /100% no-repeat;}                
+.sun.active{background: url('../images/icon/acsun.png')center /100% no-repeat;}                
+.cloud{background: url('../images/icon/cloud.png')center /100% no-repeat;}
+.cloud.active{background: url('../images/icon/accloud.png')center /100% no-repeat;}
+.snow{background: url('../images/icon/snow.png')center /100% no-repeat;}
+.snow.active{background: url('../images/icon/acsnow.png')center /100% no-repeat;}
+.rain{background: url('../images/icon/rain.png')center /100% no-repeat;}
+.rain.active{background: url('../images/icon/acrain.png')center /100% no-repeat;}
+.halfcloud{background: url('../images/icon/halfcloud.png')center /100% no-repeat;}
+.halfcloud.active{background: url('../images/icon/achalfcloud.png')center /100% no-repeat;}
+
+.title{display: flex; gap: 2rem; border-radius: 1rem; border: 1px solid #CCCCCC; padding: 3rem 2.7rem 2.4rem 1.6rem; margin-bottom: 1.6rem;}
+.title_txt{font-size: 2.2rem; font-weight: 700;}
+.tit_txt{border: none; font-size: 2.2rem;}
+
+.btn-upload {position: relative; width: 100%; height: 50rem; background: #fff; border: 1px solid rgb(77,77,77); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 10rem; overflow: hidden;}
+
+#form { width: 100%; }
+
+.input_image{ opacity: 0; width: 100%; height: 100%; z-index: 2; } /*  display:none으로 보이지 않도록 해서 submit를 누르면 에러표시를 할 수가 없어서 오류남. */
+.upload_txt { font-size: 12vw; position: absolute; }
+.show_image{position: absolute; left: 50%; transform: translateX(-50%); width: auto; height: 50rem; }
+
+.detail_text {width: 100%; border: none; padding-top: 1.45rem; font-size: 4rem; line-height: 6.5rem; letter-spacing: -.035em; background-image: url('../images/textarea_underline.jpg'); background-repeat: repeat; background-position: top center;}
+.detail_text:active,
+.detail_text:focus {outline:none}
+
+.button{display: flex; justify-content: center; gap: 1.6rem; margin-top: 2.4rem; }
+.foot_button{width: 15.6rem; height: 6.7rem; border-radius: 1rem; font-size: 3rem; background-color: #fff;}
+.foot_button:active{background-color: #FF6767; color: #fff}
