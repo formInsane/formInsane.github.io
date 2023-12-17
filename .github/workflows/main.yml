@@ -1,0 +1,15 @@
+name: get URI from MONGODB
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: env operate
+        env:
+          MONGODB_URI: ${{secrets.MONGODB_URI}}
+        run: |
+          echo $MONGODB_URI
